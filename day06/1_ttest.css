@@ -17,8 +17,6 @@ li{ list-style-type: none; } /* li 마크업은 글머리 제거 */
    
 }
 
-
-
 /* 푸터 영역 */
 #footer{
     background-color : black ; color: white;
@@ -26,24 +24,39 @@ li{ list-style-type: none; } /* li 마크업은 글머리 제거 */
     padding: 0px; 
     margin: 0px;
     }
-#footer > #tfcont{
+
+#footer > #ftcont > #fttop >.email{
+    display: flex;
+    justify-content: space-between;
     
+    border: 3;
+    width : 150px ; /* 입력상자 가로 사이즈 */
+    height: 30px; /* 입력상자 세로 사이즈 */
+    border-radius : 10px; /* 둥근모서리 */
+    padding: 1px 6px; /* 입력상자 안쪽 여백 */
+    font-size: 17px;
 }
 
 #footer > #ftcont > #fttop > #start{
+    margin: 0 auto; /* 구역 가로 가운데 정렬*/
     border: 3;
     background-color : red;    
     width : 150px ; /* 입력상자 가로 사이즈 */
     height: 30px; /* 입력상자 세로 사이즈 */
     border-radius : 10px; /* 둥근모서리 */
     padding: 1px 6px; /* 입력상자 안쪽 여백 */
+    font-size: 17px;
+    color: antiquewhite;
 }
 
-#footer > #ftmid > #h6{
+#ftbottom2{
     display: flex;
     justify-content: space-between;
 
 }
+
+
+
 
 
 
