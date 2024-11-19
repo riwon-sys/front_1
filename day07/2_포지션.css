@@ -1,0 +1,23 @@
+#popup{
+    background-color: beige; /* 배경색 */
+    width: 200px; height: 200px; /* 가로, 새로 */
+    border-radius: 10px; padding: 5px; /* 문구 둥글게, 여백 */
+    position: fixed; /* 고정된 */
+    bottom: 50px; right: 10px; /* 픽스로부터, 바닥기준 위로 50이동, 오른쪽기준 왼쪽으로 10이동 */
+    z-index: 2; 
+    /* 만약에 요소들 간의 포지션으로 겹쳤을때 우선순위를 정할경우 사용함, 
+    값이 높을 수록 겹쳤을때 바깥쪽으로 우선적으로 들어남*/
+    /* 기본 값(auto; 작성순서)*/
+}
+#header{
+    display: flex; /* 하위 요소들의 배치 방법 */
+    justify-content: space-between; /* 플렉스 요소 양쪽 균등 정렬 */
+    background-color: aqua;
+    position: sticky;/* 흡착된 또는 붙이기(의미) ; 지정된 구역이 스크롤 밖으로 나갔을때 위치 고정*/
+
+    top: 10px; /* 고정할 위치, 위 기준 바닥으로 10이동 */
+
+    z-index: 3;
+}
+
+#hearder > ul{display: flex;}
