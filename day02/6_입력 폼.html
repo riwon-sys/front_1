@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1> 입력 폼, 입력관련 마크업들</h1>
+    <form><!--form : 여러 입력 마크업들을 묶어주는 역활, 추후에 백엔드(자바)랑 통신을 할 수 있는 폼(form action)-->
+        <input /> <br/>
+      텍스트 <input type="text" value="유재석" disabled/> <br/>
+      비밀번호 <input type="password" placeholder="비밀번호" maxlength="30" autofocus/> <br/>
+
+      첨부파일+a <input type="file"/> <br/><!--multiple을 활용하면 많은 파일을 옮길 수 있다-->
+      이메일 <input type="email" value="QWE@QWE" readonly/> <br/>
+
+        
+        
+        
+      색상 <input type="color"/> <br/>
+      날짜 <input type="date"> <br/>
+      날짜/시간 <input type="datetime-local"> <br/>
+      시간 <input type="time"> <br/>
+      월 <input type="month"> <br/>
+      주 <input type="week"> <br/>
+      범위스크롤 <input type="range"> <br/>
+      숫자 <input type="number"> <br/>
+     
+
+      <input type="radio" name="동의여부1"/> 예
+      <input type="radio" name="동의여부2"/> 아니오 <br/>
+
+      <input type="checkbox" name="가입여부1"/> 뉴스
+      <input type="checkbox" name="가입여부2"/> 검색 <br/>
+        
+
+
+      <input type="submit"/> <br/> <!--폼 전송, 추후에 백엔드(자바)랑 통신을 할 수 있는 폼 -->
+      <input type="reset"/> <br/>  <!--현재 폼 안에 입력된 값을 초기화 -->
+      <input type="button"/>  <!--일반 버튼, 추후에 자바 스크립트 이벤트(함수)와 연동(on-으로 시작되는 단어들)-->  
+      <br/>
+
+      <textarea rows="5" cols="10"> 긴글 텍스트 상자(행,열은 영문기준) </textarea> <br/>
+
+      <select> 
+      <option>네이버</option>
+      <option>카카오</option>
+      <option>야후</option>
+      </select><br/>
+   
+    </form>
+    <form>
+    
+        <fieldset>
+            <legend>사용자 아이디 </legend>
+            <label>아이디</label> <input type="text"><!--인풋을 입력할때 표현하는 방식-->
+        <fieldset>
+        <label>비밀번호</label><input type="password">
+    
+    
+    </form>
+
+</body>
+</html>

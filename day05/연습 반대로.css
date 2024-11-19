@@ -1,0 +1,84 @@
+ /* 일반적인 작업용 : 작업 완료 후 삭제 예정
+ 가장 처음 * {border: 1px solid red;}
+ 본문 및 푸터 적용할 때 height
+ */
+
+
+ 
+
+ /* 공통 부문 */
+ *{margin: 0px; padding: 0px;} /* 기본값 여백 제거 */
+ *{box-sizing: border-box;}
+ 
+ li{list-style-type: none;} /* li 마크업의 글머리 제거 */
+ a{ text-decoration: none; color: black;} /* a 마크업의 밑줄 제거 , 색상 검정 */
+ 
+ /* 헤더 부문 */
+ #header{
+       width: 1200px;
+       margin: 0 auto; /* 박스,모델 구역 가운데 가로 정렬 */
+       display: flex; /* 하위 요소들의 배치 방법 속성 */
+       justify-content: space-between; /* 하위 요소들을 양쪽 끝에 균등 가로 정렬 */
+       align-items: center; /* 하위 요소들의 세로정렬 */
+ }
+ 
+ /* 상단 메뉴*/
+ #topmenu{ display: flex; justify-content: flex-end;
+           margin: 10px 0px; font-size: 10px;
+ }
+ #topmenu > li{margin-left: 20px ;}
+ 
+ 
+ /* 하단 메뉴 */
+ #bottommenu{ display: flex; justify-content: flex-end; 
+              margin: 20px 0px; font-size: 20px; font-weight: bold;
+ }
+ #topmenu > li{margin-left: 70px ;}
+ 
+ 
+ /* 이미지 부문 */
+ #maining{ width: 100%;} /* 이미지 사이즈를 100% 비율 = 디바이스 화면의 전체 차지 */
+ 
+ 
+ /* 본문 부문 */
+ #main{
+       width: 1280px; margin: 30px auto;
+       justify-content: flex-end;
+ }
+ 
+ #aside{width: 250px;} /*1280(부모크기)에서 250(자1) 사용*/
+ #aside >h3{
+       background-color: gray; color: white;
+       font-size: 20px; padding: 10px; /* 적절한 여백과 글꼴 크기 */
+ }
+ #aside >ul >li{
+        padding: 10px;
+        border-bottom: 1px solid #eeee; /* 아래쪽 테두리 */
+        justify-content: flex-end;
+ }
+ 
+ 
+ #content{width: 1000px; justify-content: space-between;} /* 부모크기에서 1000(자2) 사용, 여백 30px가 남는다 */
+ 
+ #content >h3{ font-size: 2opx;
+       border-bottom: 2px solid #eeee;
+       padding-bottom: 20px; margin-bottom: 20px; /* 테두리 기준으로 위,아래 여백 */
+ }     
+ 
+ #content >img{
+       /* img 마크업은  display 기본 값이 inline(좌,우 여백만 사용 가능하며 위 아래 여백은 사용 불가)*/
+       display: block; margin: 0 auto;/* img 마크업을 block로 변경 후 margin 사용  */
+ }
+  
+ 
+ /* 푸터 부문 */
+ #footer{
+        background-color: #2c2a29;
+ }
+ 
+ #footermain{
+        width: 1280px; margin: 0 auto; /* 전체 길이 중 1280 , 가운데로 설정 */
+        padding: 30px 0px;
+        display: flex;
+        justify-content: space-between;
+ }
