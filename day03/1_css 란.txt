@@ -73,7 +73,7 @@
 
 
  /* 웹폰트 vs 일반폰트 
- @font-face{
+ @font-face
      
  */
 

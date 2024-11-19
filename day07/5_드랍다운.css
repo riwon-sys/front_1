@@ -1,0 +1,50 @@
+* {padding: 0px; margin: 0%;}
+#header{
+    background-color: beige;
+}
+
+#header > ul{
+    display: flex; justify-content: center;
+}
+
+#header > ul > li{
+    list-style-type: none; /* li 글머리 */
+    padding: 20px; /* 여백 */
+    position: relative;
+}
+
+#header .submenu{
+    display: none;
+    position: absolute;
+
+    top: 50px; /* 위에서 부터 10px 만큼 아래로 이동*/ 
+    left: 0px;
+
+    background-color: beige;
+
+    padding: 10px;
+}
+
+/* 지정된 li 마크업을 hover 했을때 */
+/* 선택자 :hover 변경할 선택자{} */
+#header > ul > .menu:hover .submenu{
+    display: block; /* 기존의 display 값을 hover 했을때, block 으로 css변경 */ 
+}
+
+#header2{background-color: skyblue;}
+
+#header2 > ul{display: flex; justify-content: center;}
+#header2 > ul > li{padding: 10px;}
+
+#header2{position: relative;}
+#header2 .submenu2{
+    position: absolute;
+    top: 40px;
+    display: none;
+    
+    background-color: skyblue;
+    width: 100%;
+}
+#header2 > ul:hover .submenu2{
+    display: block;
+}

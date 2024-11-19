@@ -25,6 +25,13 @@ li{ list-style-type: none; } /* li 마크업은 글머리 제거 */
     margin: 0px;
     }
 
+#fttop{
+    text-align: center;
+    display: flex;
+    
+}
+
+
 #footer > #ftcont > #fttop >.email{
     display: flex;
     justify-content: space-between;
@@ -49,10 +56,9 @@ li{ list-style-type: none; } /* li 마크업은 글머리 제거 */
     color: antiquewhite;
 }
 
-#ftbottom2{
+#ftmid{
     display: flex;
     justify-content: space-between;
-
 }
 
 
