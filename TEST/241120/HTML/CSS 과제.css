@@ -1,0 +1,13 @@
+/* ============== 공통 CSS ===================== */
+*{ 
+    padding: 0px; margin: 0px; 
+    font-size: 12px; box-sizing: border-box;
+  }
+  li{ list-style-type: none; }
+  a{ color: black; text-decoration: none; }
+  /* ============== 레이아웃 CSS ===================== */
+  #header{ width: 100%; }
+  #content{ width: 1600px; margin: 0 auto; }
+  #footer{ width: 100%; }
+
+  
