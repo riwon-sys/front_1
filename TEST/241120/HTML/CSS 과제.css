@@ -1,13 +1,42 @@
-/* ============== 공통 CSS ===================== */
-*{ 
-    padding: 0px; margin: 0px; 
-    font-size: 12px; box-sizing: border-box;
-  }
-  li{ list-style-type: none; }
-  a{ color: black; text-decoration: none; }
-  /* ============== 레이아웃 CSS ===================== */
-  #header{ width: 100%; }
-  #content{ width: 1600px; margin: 0 auto; }
-  #footer{ width: 100%; }
+/* 기본 스타일 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 헤더 스타일 */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* 푸터 스타일 */
+footer {
+  background-color: #f1f1f1;
+  color: #333;
+  text-align: center;
+  padding: 15px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 
   
