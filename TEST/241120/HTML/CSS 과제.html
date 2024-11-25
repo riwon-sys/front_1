@@ -1,47 +1,72 @@
-!DOCTYPE html>
-<html lang="ko">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>랭킹닭컴</title>
-    <link rel="stylesheet" href="CSS 과제.css">
+ 
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS 과제.css'>
+    
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">≡ 카테고리</a></li>
-                <li><a href="#">랭킹</a></li>
-                <li><a href="#">특가</a></li>
-                <li><a href="#">브랜드관</a></li>
-                <li><a href="#">1팩 담기</a></li>
-                <li><a href="#">AI쉽단</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="login-container">
-            <h2>로그인</h2>
-            <form action="/login" method="post">
-                <label for="username">아이디</label>
-                <input type="text" id="username" name="username" required>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랭킹닭컴 로그인</title>
+   
     
-                <label for="password">비밀번호</label>
-                <input type="password" id="password" name="password" required>
-    
-                <button type="submit">로그인</button>
-            </form>
-            <div class="links">
-                <a href="/register">회원가입</a>
-                <a href="/forgot-password">비밀번호 찾기</a>
+</head>
+<body>
+    <div class="container">
+        <title>랭킹닭컴 로그인</title>
+        <div class="logo"><a href="#">랭킹닭컴입니다. </a> </div>
+        <form>
+            <div class="input-group">
+                <label for="username"></label>
+                <input type="text" id="username" placeholder="아이디">
             </div>
-        </div>
-    </body>
-    
-    </main>
+            <div class="input-group">
+                <label for="password"></label>
+                <input type="password" id="password" placeholder="비밀번호">
+            </div>
+            <div class="checkbox-group">
+                <label><input type="checkbox" checked> 자동로그인</label>
+                <label><input type="checkbox" checked> 아이디 저장</label>
+            </div>
+            <button type="submit" class="btn-login">로그인</button>
+        </form>
+        <div class="links">
+            <a href="#">아이디 찾기</a> ㅣ <a href="#">비밀번호 찾기</a>
+            </br>
+        <div sns-login><!--// sns-login -->
+            <input type="hidden" name="_csrf" value="ca169b68-6f9c-49c7-a239-a532b9fc6f9c" /> 
+            </div></form><div class="sns-login">    
+            <ul class="sns-login-list">
+                
+                    <a href="javascript:loginWithNaver()"><i class="ico-sns-loin naver"></i><span class="blind">네이버 로그인</span></a></br>
+                    
+                
+                    <a href="javascript:loginWithApple()"><i class="ico-sns-loin apple"></i><span class="blind">애플 로그인</span></a></br>
+                    
+                
+                    <a href="javascript:loginWithKakao();"><i class="ico-sns-loin kakao"></i><span class="blind">카카오 로그인</span></a></br>
+            </ul>
+        </div sns-login><!-- sns-login //-->
 
-    <footer>
-        <p>&copy; 2024 회사명. 모든 권리 보유.</p>
-    </footer>
+
+
+            </br>
+            <div class="input-group2">
+                <label for="username"></label>
+                <input type="text" id="username" placeholder="아이디">
+            </br></br>
+            </div>
+            <a href="#">비회원주문조회</a>
+
+        </div>
+    </div>
+</body>
+</html>
+</html>
 </body>
 </html>

@@ -1,43 +1,85 @@
-/* 기본 스타일 초기화 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f06522;
+}
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.checkbox-group {
+    display: flex;
+    
+    
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+}
+.checkbox-group input {
+    margin-right: 5px;
+}
+.btn-login {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #f06522;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-login:hover {
+    background-color: #d9541b;
+}
+.links {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.links a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 5px;
+}
+.links a:hover {
+    color: #f06522;
 }
 
-/* 헤더 스타일 */
-header {
-  background-color: #333333;
-  color: #fff;
-  padding: 20px 0;
-  font-size: 14px pretendard; font-style: sans-serif;
+.sns-login-list{
+align-items: center;
 }
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-header nav ul li {
-  margin: 0 15px;
-}
-
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-/* 푸터 스타일 */
-footer {
-  background-color: #f1f1f1;
-  color: #333;
-  text-align: center;
-  padding: 15px 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-  
