@@ -4,7 +4,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+ 
+    text-align: center;
+
 }
+
+
 .container {
     max-width: 400px;
     margin: 100px auto;
@@ -14,6 +19,16 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.semi-title{
+    text-align: left
+
+}
+
+.txt {
+  font-size: 25px;
+
 }
 .logo {
     font-size: 24px;
@@ -82,4 +97,51 @@ body {
 
 .sns-login-list{
 align-items: center;
+margin: 30px;
 }
+
+.blind > img{
+    margin-right: 5px;
+    width: 80px;
+}
+
+.semi-title span{
+    font-size:  25px;
+    font-weight: bold;
+}
+.btn-bottom-area{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 35px;
+    margin: 10px 0px;
+    /* display: flex
+; */
+    display: flex
+;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sns1{
+    width: 100px;
+}
+
+.sns2{
+    width: 43px;
+    margin-left: 10px;
+}
+
+.remember-me{
+    flex: content;
+    padding: 0 0 0 28px;
+
+}
+
+.remember-me2{
+    flex: content;
+    padding: 0 0 0 28px;
+
+}
+   
