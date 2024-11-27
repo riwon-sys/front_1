@@ -12,6 +12,10 @@
 1. Number( )            : 정의: 숫자타입으로 변환 함수  / 매개변수 : 변환할 데이터 / 반환값 : 변환된 숫자데이터
 2. String( )            : 정의: 문자열타입으로 변환 함수 / 매개변수 : 변환할 데이터 / 반환값 : 변환된 문자열데이터
 3. parseInt( )          : 정의: 정수타입으로 변환 함수 / 매개변수 : 변환할 데이터 / 반환값 : 변환된 정수데이터
+4. document.querySelector( ) : 정의:HTML 마크업들을 DOM객체 호출하는 함수 / 매개변수 : 선택자 / 반환값 : 지정한 DOM객체
+     - document.querySelector (".클래스명") :  지정한 마크업의 DOM객체를 반환
+     - document.querySelector ('#id명')    :  지정한 class 속성을 가진 마크업의 DOM객체를 반환
+     - document.querySelector ('마크업명')  : 지
 
 [ 반 복 문 ]
 1.조건 충족할때 특정 범위내 코드를 반복 실행
