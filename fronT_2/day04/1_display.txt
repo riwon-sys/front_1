@@ -1,0 +1,12 @@
+[display 속성]
+마크업들을 배치 하는 방법을 정의하는 속성
+종류
+1.block(해당 마크업이 한줄을 차지하는 배치)(witth/height 적용X)
+ - div,h,p,ul,li
+
+2.inline(해당 마크업이 한줄에 포함되는 배치)(witth/height 적용O)
+ - span,a...
+
+3.inline-block(witth/height 적용0)
+
+4.none

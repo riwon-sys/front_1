@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link href="5_중간과제4.css" rel="stylesheet"/> 
+    </head>
+
+    <body>
+
+        <!-- 
+            모든 마크업들의 기본적인 CSS 포함되어 있다.
+                예] <h3> 마크업은 글자크기 와 굵게 와 여백 등등 css 기본값 있다.
+                - 대책 : 관례적으로 구역/박스(레이아웃) 구성할때 사용되는 마크업 있다.
+                    <div> <span>
+                - display : 마크업이 배치 되는 방법
+                <div> , <p> , <img> , <h> , <li> , <ol> : block(한줄차지)
+                <span> , <a> ,: inline(한줄포함)
+            -->
+
+        <!-- 상단 구역 -->
+        <p class="top"> <img src="../짱구.jpg"/></p>
+
+        <!-- 하단 구역/본문 -->
+        <p class="bottom">
+            <p class="title"> <a class="point1">01</a> 누구를 위한 책인가? </p>
+            <p class="content">
+                - <a class="point2">프로그램</a> 입문을 위한 분 <br />
+                - C++언어는 익숙한 데 파이썬은 처음인분  <br />
+                - 대학 및 교육 기관에서 파이썬을 강의하려는 분  <br />
+            </p>
+            <p class="title"> <a class="point1">02</a> 이책의 특징</p>
+            <p class="content">
+                - 재미있고 <a class="point2">다양한 실습 예제</a>  <br /> 
+                - YOUTUBE 동영상 콘텐츠 제공  <br />
+                - 다양한 난이도의 연습문제 다수 제공  <br />
+            </p>
+        </p>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
