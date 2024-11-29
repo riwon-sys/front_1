@@ -67,3 +67,38 @@ for( let index = 0 ; index <= 점수배열2.length - 1 ; index++ ){
 } // for end 
 outHTML2 += `</ol>`
 document.write( outHTML2 )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

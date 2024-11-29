@@ -89,3 +89,10 @@ function 출력함수(){ console.log('출력함수 실행');
     table.innerHTML = html;
     
 } // f end 
+
+
+
+
+
+
+

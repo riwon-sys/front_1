@@ -104,6 +104,16 @@
             </select>
 
         4. <label> , 입력상자의 연관된 텍스트 , 이름표
+        
         5. <fieldset> , 폼 안에서 여러 입력상자들을 묶을때(그룹) 사용
             - <legend> , 묶음(그룹)의 제목/이름 설정 
         
+        6. <table> , 표 만드는 마크업
+            - <tr> </tr> : 행 추가 마크업  
+            - <th> </th> : 제목 셀(칸) 추가 마크업
+            - <td> </td> : 데이터 셀(칸) 추가 마크업
+            - 속성 
+                1. rowspan="행병합수"
+                2. colspan="열병합수"
+                3. border = "테이블테두리" , <table border="1"> </table>
+                    - CSS 이용한 테두리 병합 : style="border-collapse : collapse"

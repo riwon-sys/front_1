@@ -86,3 +86,6 @@ console.log( pointArray.indexOf( '유재석' ) ) // -1 , '유재석' 이라는 �
 let 결과1 = pointArray.indexOf('하하')   // 결과1 =  1
 console.log( 결과1 )                    // 1 
 let 결과2 =   3 + 10;                   // 결과2 = 13  
+
+
+
