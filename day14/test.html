@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기계식 주차장</title>
+    <style>
+        .parking-space {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            display: inline-block;
+            text-align: center;
+            line-height: 50px;
+            margin: 5px;
+        }
+        .occupied {
+            background-color: red;
+            color: white;
+        }
+        .available {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>기계식 주차장</h1>
+
+    <div id="parkingLot"></div>
+
+    <div>
+        <label for="carNumber">차량번호:</label>
+        <input type="text" id="carNumber" placeholder="차량번호 입력">
+    </div>
+    
+    <div>
+        <label for="parkingSpace">주차할 위치(1~20):</label>
+        <input type="number" id="parkingSpace" min="1" max="20">
+    </div>
+
+    <button onclick="parkCar()">입차</button>
+    <button onclick="exitCar()">출차</button>
+
+    <p id="message"></p>
+
+    <script>
+        let parkingSpaces = new Array(20).fill(0);
+
+        function parkCar() {
+            const carNumber = document.getElementById('carNumber').value;
+            const parkingSpace = parseInt(document.getElementById('parkingSpace').value) - 1;
+            const message = document.getElementById('message');
+
+            if (carNumber === "" || parkingSpace < 0 || parkingSpace >= 20) {
+                message.textContent = "잘못된 입력입니다. 차량 번호와 위치를 확인하세요.";
+                return;
+            }
+
+            if (parkingSpaces[parkingSpace] === 1) {
+                message.textContent = "입차불가: 해당 위치에 이미 차량이 있습니다.";
+            } else {
+                parkingSpaces[parkingSpace] = 1;
+                message.textContent = `입차성공! 차량번호 ${carNumber}가 위치 ${parkingSpace + 1}에 주차되었습니다.`;
+                updateParkingLot();
+            }
+        }
+
+        function exitCar() {
+            const carNumber = document.getElementById('carNumber').value;
+            const message = document.getElementById('message');
+
+            if (carNumber === "") {
+                message.textContent = "차량 번호를 입력해주세요.";
+                return;
+            }
+        }
+            let parked
