@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <div>
+        <h3> 사원 등록 </h3>
+        <form>
+            사원명 : <input class="name" type="text"/>
+            생년월일 : <input class="birth" type="date" />
+            <button onclick="사원등록()" type="button">사원등록</button>
+        </form>
+    </div>
+    <div>
+        <h3> 사원 목록 </h3>
+        <table border="1">
+            <thead> 
+                <tr> 
+                    <th> 사원번호 </th>
+                    <th> 사원명 </th> 
+                    <th> 생년월일 </th>
+                    <th> 비고</th>
+                </tr>
+            </thead>
+            <tbody class="사원테이블">
+                <tr> <td> 유재석 </td> <td> 2000-01-01 </td></tr>
+                <tr> <td> 강호동 </td> <td> 1950-02-11 </td></tr>
+                <tr> <td> 신동엽 </td> <td> 1988-03-25 </td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="평가입력구역">
+
+    </div>
+
+    <div>
+        <h3> 사원평가목록 </h3>
+        <table border="1">
+            <thead> <tr> <th> 연도 </th> <th> 상반기 </th> <th> 하반기 </th></tr></thead>
+            <tbody class="사원평가점수">
+                <tr> <td> 2023 </td> <td> 100 </td> <td> 92 </td> </tr>
+                <tr> <td> 2022 </td> <td> 45 </td> <td> 53 </td> </tr>
+                <tr> <td> 2021 </td> <td> 72 </td> <td> 75 </td> </tr>
+                <button onclick="사원평가점수()" type="button">사원평가점수</button>
+            </tbody>
+        </table>
+    </div>
+
+    <script src='5_객체활용.js'></script>
+</body>
+</html>
+
+
+<!-- 
+     주제 : 인사 관리 시스템
+        [요구사항]   
+          1. 인사 정보 등록 : '이름 , 생년월일' 등등 그외 임의 추가
+              - 각 정보들을 HTML로 입력받아서 JS에서 등록 처리 하기
+          
+          2. 전체 인사 정보 출력 내역 : 현재 등록된 모든 인사 정보를 출력
+              - 현재 등록된 모든 인사 정보를 출력 
+          
+          3. 각 인사의 고가평가(점수) 등록 : 각 연도별 상,하반기 등등 그외 임의 추가
+              - 각 상,하반기 점수를 HTML로 입력받아서 JS에서 등록 처리 하기 
+          
+          4. 각 인사별 전체 고가평가(점수) 정보 출력 
+             - 각 인사별 점수를 출력하시오
+       [스케치]
+          1. 위 요구 사항에 따른 화면 설계 및 구성
+          2. 위 요구 사항에 따른 메모리 (변수/배열/CSV)를 설계 및 구성
+-->   
