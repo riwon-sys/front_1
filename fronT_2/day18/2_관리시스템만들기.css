@@ -1,0 +1,32 @@
+*{
+    margin: 0 auto; padding: 0px;
+}
+.sBtn{
+    margin-bottom: 20px;
+}
+#sisTop{
+    width: 600px;
+    margin: 30px auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+#sisTop fieldset{
+    width: 250px;
+}
+#sisTop input{
+    margin-bottom: 20px;
+}
+#sisTop p{
+    margin-top: 20px;
+}
+#cBottom{
+    margin-bottom: 15px;
+}
+
+#sisBottom{
+    width: 1000px;
+}
+.Table{
+    width: 950px; text-align: center;
+}

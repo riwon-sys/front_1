@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' type='text/css' media='screen' href='2_관리시스템만들기.css'>
+</head>
+<body>
+    <form id="wrap">
+        <fieldset id="sisTop">
+            <legend class="">관리시스템</legend>
+            <fieldset id="cTop">
+                <legend>클래스등록</legend>
+                <p>클래스 명</p><br/>
+                <input /> <br/>
+                클래스 담당자<br/>
+                <input /><br/>
+                클래스 시작 일자 <br/>
+                <input type="date"/> <br/>
+                <button class="sBtn">등록</button>
+            </fieldset>
+            <fieldset id="cBottom">
+                <legend>수강생등록</legend>
+                <p>성명</p><br/>
+                <input /> <br/>
+                연락처<br/>
+                <input /> <br/>
+                생년월일<br/>
+                <input type="date"/> <br/>
+                클래스 명<br/>
+                <input /><br/>
+                등록일자<br/>
+                <input type="date"/> <br/>
+                수강생코드<br/>
+                <input /> <br/>
+                <button class="sBtn">등록</button>
+            </fieldset>
+        </fieldset>
+        <fieldset id="sisBottom">
+            <legend>수강생관리</legend>
+                <table class="Table" border="1">
+                    <tr>
+                        <th>고유번호</th><th>성명</th><th>연락처</th><th>등록일자</th><th>클래스명</th><th>강사</th>
+                    </tr>
+                    <tr>
+                        <td>24-1</td><td>강호동</td><td>123-4567-8999</td><td>2024-12-04</td><td>HTML</td><td>호날두</td><td class="btn"><button>삭제</button><button>수정</button></td>
+                    </tr>
+                </table>
+        </fieldset>
+    </form>
+    <div></div>
+    
+
+
+
+    <script src='2_관리시스만들기.js'></script>
+</body>
+</html>
