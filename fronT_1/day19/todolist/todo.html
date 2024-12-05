@@ -8,34 +8,37 @@
 <body>
     <div id="wrap">
       
-      <div class="title">투두리스트</div>
-      <div class="todoTop">
-          <input class="contentInput">
-          <button onclick="등록함수" class="addBtn"></button>
-      </div>
+      <h1 class="title">투두리스트</h1>
+      <div id="todoTop">
+          <input class="contentInput"/>
+          <button onclick="등록함수()" class="addBtn"> 등록 </button>
+      </div> <!-- 투두 탑-->
 
-      <div class="todoBottm">
-          <div class="content">
-              <div class="contentBox"></div>
-               <button class="수정버튼"></button>
-               <button class="삭제버튼"></button>
+      <div class="todoBottom">
+          <div class="contentBox">
+              <div class="content">1교시수업듣기</div>
+              <div class="contentBtns">
+                 <button class="updateBtn">수정</button>
+                 <button class="deleteBtn">삭제</button>
+              </div>
           </div>
 
-          <div class="content">
-            <div class="contentBox"></div>
+          <div class="contentBox success">
+              <div class="content"> 밥먹기 </div>
+              <div class="contentBtns">
+                  <button class="updateBtn">수정</button>
+                  <button class="deleteBtn">삭제</button>
+              </div>
+          </div>
              
-             <button class="수정버튼"></button>
-             <button class="삭제버튼"></button>
-          </div>
-      </div>
-
+        </div><!--투두 바텀-->
 
       
        
     </div>
 
 
-    </div>
+    
 
     <script src='todo.js'></script>
 </head>
