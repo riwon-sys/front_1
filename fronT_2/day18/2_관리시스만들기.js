@@ -47,7 +47,7 @@ OOO 수강생 관리            수강생을 어떻게 클래스로 등록하느
  */
                
 
-
+/*
    #(1)
    let 클래스코드 = [
      { 클래스코드 : 1 , 클래스명 : "HTML" , 클래스담당자 : "홍길동" , 클래스시작일자 : 12-04 },
@@ -91,4 +91,51 @@ function byeBtn(){
 // 수정함수
 function whatBtn(){
 
-} // f end
+} // f end 
+*/
+
+
+   // 클래스 및 수강생 배열 초기화
+   let 클래스코드 = [
+       { 클래스코드: 1, 클래스명: "HTML", 클래스담당자: "홍길동", 클래스시작일자: "12-04" },
+       { 클래스코드: 2, 클래스명: "CSS", 클래스담당자: "길홍동", 클래스시작일자: "12-05" },
+       { 클래스코드: 3, 클래스명: "JS", 클래스담당자: "동길홍", 클래스시작일자: "12-06" }
+   ];
+   console.log(클래스코드);
+
+   let 수강생코드 = [
+       { 수강생코드: 1, 성명: "강아지", 연락처: "123-4567-8888", 클래스시작일자: "12-04", 클래스코드: 1 },
+       { 수강생코드: 2, 성명: "아강지", 연락처: "123-4567-9999", 클래스시작일자: "12-05", 클래스코드: 2 },
+       { 수강생코드: 3, 성명: "지아강", 연락처: "123-4567-4444", 클래스시작일자: "12-06", 클래스코드: 3 }
+   ];
+   console.log(수강생코드);
+   
+   const classForm = document.getElementById('cTop');
+   const classSubmitBtn = classForm.querySelector('.sBtn');
+   
+   classSubmitBtn.addEventListener('click', (event) => {
+       event.preventDefault();
+   
+       // 입력값 가져오기
+       const className = classForm.querySelector('[name="className"]').value;
+       const classTeacher = classForm.querySelector('[name="classTeacher"]').value;
+       const classStartDate = classForm.querySelector('[name="classStartDate"]').value;
+   
+       // 유효성 검사
+       if (!className || !classTeacher || !classStartDate) {
+           alert('모든 필드를 입력해주세요.');
+           return;
+       }
+   
+       // 클래스 정보 추가
+       const newClass = {
+           클래스코드: 클래스코드.length + 1,
+           클래스명: className,
+           클래스담당자: classTeacher,
+           클래스시작일자: classStartDate
+       };
+       클래스코드.push(newClass);
+   
+       // 화면 업데이트 (예시)
+       // ...
+   });
