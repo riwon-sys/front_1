@@ -1,14 +1,19 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 50px;
+}
 /* 1. 전체 구역 */
-#wrap{ width: 400px; margin: 0 auto; }
-#todoTop{  display: flex; }
+#wrap{ width: 100%; margin: 0 auto; }
+
 /* 2. 입력상자 */
 .contentInput {
-    width: 300px;  padding: 15px;
+    width:  100%;  padding: 20px;
     border : none; box-shadow: 0px 0px 3px blue;
 }
 /* 3. 등록버튼 */
 .addBtn{
-    width: 100px; padding: 15px;
+    width:  100%; padding: 20px;
     border: none;  box-shadow: 0px 0px 3px blue;
 }
 /* 4. 할일 1개 구역 : 할일이 미완료 일때 */
@@ -19,6 +24,7 @@
     background-color: pink;
     margin: 20px 0px;
     padding: 15px 10px;
+    height: 50px;
 }
 /* 5. 할일이 완료 일때 */
 .success{
