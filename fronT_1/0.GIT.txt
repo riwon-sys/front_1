@@ -35,4 +35,69 @@
     10. [ 커밋 및 푸시  ] 
         * 만일 최초/pc변경시 git 사용이면 [ git 로그인 ]창 나오면 브라우저 로그인 처리 
 
-[ git page ]
+[ GIT PAGE ] 간단한 페이지(HTML/CSS/JS) 배포 , 포트폴리오(프론트엔드 개발자)
+    - git 에서 코드 저장소(리포지토리)의 코드를 호스팅 할수 있는 기능 
+    1. 호스팅할 저장소의  메인페이지 파일명을 'index.html' 
+    2. 본인 github 홈페이지 접속 
+    3. [ new ] 또는 [ new repository ]
+    4. Create a new repository
+        - Repository name : (임의로 아무거나) tolist
+        - Public
+            [ create repository ]
+    5. 빈 리포지토리에 화면 가운데 'uploading an existing file' 클릭 
+    6. 'index.html' 파일을 드래그 해서 업로드 , css/js 와 또 다른 html 포함 가능
+        -> index.html 파일은 리포지토리에 최상위 경로에 있어여한다.
+        [ commit change ]
+    6. 리포지토리 상단 메뉴에 [ settings ] 클릭 
+    7. 왼쪽 사이드 메뉴에 [Pages] 클릭 
+    8. [Branch] 항목에서 
+        [None] ---> [main]으로 변경후 [/root] [save]클릭 
+    9. 1~2분 기다리기 : 새로고침F5 -> Your site is live at https://xxxxx.github.io/xxxx
+
+[ 로컬(내pc) , 원격저장소(깃서버)]
+https://github.com/itdanjalog/tj2024b_front (원격) : 깃허브 회사에 서버실에 코드 저장소
+clone(복제) : 원격으로부터 로컬로 가져오는 행위
+commit(완료) : 로컬로 부터 코드를 저장
+push : 로컬로 부터 완료된 코드들을 원격으로 올리기/업로드 행위
+-> commit and push
+pull : 원격으로부터 상태를 다운로드 받는 행위
+
+깃
+  원격 : https://github.com/itdanjalog/tj2024b_front (예시)
+학원
+  로컬 : tj2024b_front (예시)
+집
+  로컬 : kim/tj2024b_front(예시)
+  ㄴ 새창 > 깃 리포지토리 복제 
+
+[ 버전 관리 ] VCS
+오늘 기준 12/12 15:02
+   [깃] https://github.com/itdanjalog/tj2024b_front 1.0 (예시)
+   [학원] tj2024b_front 1.0 (예시)
+
+   오늘 기준 12/12 20:02
+     [집] tj2024b_front 1.0 (예시)
+
+   오늘 기준 12/12 22:02
+     [집] tj2024b_front 1.0 --->1.1push (예시)
+
+오늘 기준 12/13 09:02
+   [학원] tj2024b_front 1.0 (예시)  
+   ㄴ 깃 리포지토리 버튼 >  소스제어 버튼 옆 ...기타 작업버튼 > 풀 버튼 클릭
+   [학원] tj2024b_front 1.0 --->1.1(예시)
+
+[ 브랜치 / 분기 ]
+  정의 : 프로젝트를 하나의 저장소에서 각 브랜치 마다 서로다른 저장 상태 및 버전을 관리 할 수 있도록 지원하는 기능
+  저장소 하나에 여러가지 흐름을 만들어줌
+  목적
+     1. 프로젝트 버전관리 ( 배포용 ,테스트용 등등 ) 
+     2. 협업간의 각 사람들마다 코드를 구분 및 분류 
+     3. 리포지토리 버튼 > 맨 밑 하단의 main* 
+     4. main* 브랜치를 한 사람이 사용하면 문제가 없지만 , 여러 사람이 동일한 브랜치로 동일한 저장소로 사용하면 문제 발생
+[ 브랜치 생성 및 운영 ] - vss 기준
+1.생성 
+ㄴ 리포지토리 버튼 > 소스제어 > 분기(브런치) > 브랜치 생성
+ㄴ 리포지토리 버튼 > 맨 밑 하단의 main* > 브랜치 생성
+
+2. 브랜치 명은 아무거나(영문권장) 입력 후 생성
+3. 최초 브랜치 생성 후 최초1회는 push(브랜치 게시)한다.
